@@ -54,7 +54,21 @@
     <div id="poem"></div>
     <!-- script -->
     <script>
-      const article = `Government officials were warned repeatedly about making misleading claims about job figures before the official statistics watchdog reprimanded Boris Johnson over the matter. Ed Humpherson, the director general of the UK Statistics Authority (UKSA), said there had been “a series of informal discussions” before the regulator took the “unusual” step of issuing public rebukes to No 10 over the same issue twice last month. During more than half a dozen editions of prime minister’s questions since November, Johnson has made the misleading claim that more people are in employment in the UK than before the pandemic began. Yet, although the numbers of workers on payrolls has risen, the number of self-employed people has dropped significantly so that the total number of people in work is down by 600,000. The chair of the UKSA, Sir David Norgrove, wrote to Johnson saying he was making “a selective use of data” and added that “public trust requires a complete statement”.`;
+      const article = `The Climate Council has issued a pre-election call for all Australian political parties to acknowledge the climate crisis is driving worsening disasters, including the “megafloods” in Queensland and New South Wales.
+
+The Australian Industry Group also declared on Monday that Australia’s former competitive advantage in carbon-intensive energy was “gone” and the country needed “coherent and efficient action” to build a new advantage in clean energy.
+
+With an election due by May, the Climate Council said “too many leaders” were silent or absent on the climate crisis, and Australians were “paying a high price” for the lack of meaningful action.
+
+A destroyed house in Wilsons Creek, NSW.
+‘Next level destruction’: NSW residents detail the moments floods devastated their homes
+Read more
+“Climate change isn’t a footnote to the story of these floods. It is the story,” the Climate Council said in a statement on Monday.
+
+The organisation – which brings together climate scientists, health, renewable energy and policy experts – issued a four-point call for all federal political parties and candidates.
+
+That includes actively acknowledging “the destructive role that climate change is playing in driving worsening disasters including these megafloods”.
+a way that takes into account climate change and makes them more resilient.”.`;
       const button = document.getElementById("new-poem");
       function shuffleWords(list) {
         return list
@@ -76,7 +90,7 @@
       function assemblePoem(articleWords) {
         let lineText = "";
         for (const [counter, word] of articleWords.entries()) {
-          if ((counter + 1) % 5 == 0) {
+          if ((counter + 1) % 12 == 0) {
             addLine(lineText);
             lineText = "";
           } else {
